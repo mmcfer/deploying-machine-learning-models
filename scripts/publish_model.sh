@@ -2,7 +2,9 @@
 
 # Building packages and uploading them to a Gemfury repository
 
-GEMFURY_URL=$PIP_EXTRA_INDEX_URL
+#GEMFURY_URL=$PIP_EXTRA_INDEX_URL
+GEMFURY_URL="https://LyvbzqzTVCwTGGEiCB6H@pypi.fury.io/mmcfer/"
+
 
 set -e
 
