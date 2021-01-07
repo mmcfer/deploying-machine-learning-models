@@ -10,6 +10,8 @@ DIRS="$@"
 BASE_DIR=$(pwd)
 SETUP="setup.py"
 
+
+
 warn() {
     echo "$@" 1>&2
 }
@@ -42,3 +44,4 @@ else
         build $dir
     done
 fi
+
