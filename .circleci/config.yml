@@ -48,9 +48,9 @@ jobs:
     <<: *defaults
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - py-deps-{{ checksum "packages/ml_api/requirements.txt" }}
+      #- *restore_cache:
+      #    keys:
+      #      - py-deps-{{ checksum "packages/ml_api/requirements.txt" }}
       - run:
           name: Runnning tests
           command: |
@@ -59,8 +59,8 @@ jobs:
             pip install --upgrade pip
             pip install -r packages/ml_api/requirements.txt
             py.test -vv packages/ml_api/tests -m "not differential"
-      - save_cache:
-          key: py-deps-{{ checksum "packages/ml_api/requirements.txt" }}
+      #- save_cache:
+      #    key: py-deps-{{ checksum "packages/ml_api/requirements.txt" }}
           paths:
             - "/venv"
 
