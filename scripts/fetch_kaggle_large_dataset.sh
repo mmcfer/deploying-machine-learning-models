@@ -9,7 +9,8 @@ echo $TRAINING_DATA_URL 'retrieved on:' $NOW > packages/neural_network_model/neu
 mkdir -p "./packages/neural_network_model/neural_network_model/datasets/v2-plant-seedlings-dataset/Shepherds Purse"  && \
 ls "./packages/neural_network_model/neural_network_model/datasets/v2-plant-seedlings-dataset/"  && \
 FOLDER=(`ls ./packages/neural_network_model/neural_network_model/datasets/v2-plant-seedlings-dataset/`)
-echo ${FOLDER[11]}
+echo ${FOLDER[15]}
+echo ${FOLDER[16]}
 echo "Pepe"
 mv -v "./packages/neural_network_model/neural_network_model/datasets/v2-plant-seedlings-dataset/Shepherd's Purse/"* "./packages/neural_network_model/neural_network_model/datasets/v2-plant-seedlings-dataset/Shepherds Purse"
 rm -rf "./packages/neural_network_model/neural_network_model/datasets/v2-plant-seedlings-dataset/Shepherd's Purse" 
