@@ -1,4 +1,4 @@
-#!/usr/bin/env bash --utf8
+#!/usr/bin/env bash
 
 TRAINING_DATA_URL="vbookshelf/v2-plant-seedlings-dataset"
 NOW=$(date)
