@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash --utf8
 
 TRAINING_DATA_URL="vbookshelf/v2-plant-seedlings-dataset"
 NOW=$(date)
@@ -7,8 +7,5 @@ kaggle datasets download -d $TRAINING_DATA_URL -p packages/neural_network_model/
 unzip packages/neural_network_model/neural_network_model/datasets/v2-plant-seedlings-dataset.zip -d packages/neural_network_model/neural_network_model/datasets/v2-plant-seedlings-dataset && \
 echo $TRAINING_DATA_URL 'retrieved on:' $NOW > packages/neural_network_model/neural_network_model/datasets/training_data_reference.txt && \
 mkdir -p "./packages/neural_network_model/neural_network_model/datasets/v2-plant-seedlings-dataset/Shepherds Purse"  && \
-ls packages/neural_network_model/neural_network_model/datasets/v2-plant-seedlings-dataset/ && \
-echo packages/neural_network_model/neural_network_model/datasets/v2-plant-seedlings-dataset/* && \
-ls 'packages/neural_network_model/neural_network_model/datasets/v2-plant-seedlings-dataset/ShepherdÔÇÖs Purse/' && \
-mv -v './packages/neural_network_model/neural_network_model/datasets/v2-plant-seedlings-dataset/ShepherdÔÇÖs Purse/'* './packages/neural_network_model/neural_network_model/datasets/v2-plant-seedlings-dataset/Shepherds Purse'
-rm -rf './packages/neural_network_model/neural_network_model/datasets/v2-plant-seedlings-dataset/ShepherdÔÇÖs Purse'
+mv -v "./packages/neural_network_model/neural_network_model/datasets/v2-plant-seedlings-dataset/Shepherd’s Purse/"* "./packages/neural_network_model/neural_network_model/datasets/v2-plant-seedlings-dataset/Shepherds Purse"
+rm -rf "./packages/neural_network_model/neural_network_model/datasets/v2-plant-seedlings-dataset/Shepherd’s Purse" 
