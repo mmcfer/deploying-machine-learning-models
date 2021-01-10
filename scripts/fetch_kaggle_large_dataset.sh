@@ -21,3 +21,4 @@ mv -v "$VAR1$VAR2$VAR4$VAR3"* "./packages/neural_network_model/neural_network_mo
 
 #rm -rf "./packages/neural_network_model/neural_network_model/datasets/v2-plant-seedlings-dataset/Shepherd's Purse" 
 rm -rf "$VAR1$VAR2$VAR4$VAR3"
+ls -l "./packages/neural_network_model/neural_network_model/datasets/v2-plant-seedlings-dataset/"
