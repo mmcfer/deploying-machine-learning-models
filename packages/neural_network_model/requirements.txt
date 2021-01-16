@@ -8,6 +8,7 @@ opencv-python==4.0.0.21
 h5py==2.9.0
 Theano==0.9.0
 
+
 # packaging
 setuptools==40.6.3
 wheel==0.32.3
@@ -17,3 +18,4 @@ pytest==4.0.2
 
 # fetching datasets
 kaggle==1.5.1.1
+
