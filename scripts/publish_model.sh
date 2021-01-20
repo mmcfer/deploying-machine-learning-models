@@ -2,8 +2,9 @@
 
 # Building packages and uploading them to a Gemfury repository
 
-GEMFURY_URL=$GEMFURY_PUSH_URL
+# GEMFURY_URL=$GEMFURY_PUSH_URL
 
+GEMFURY_URL='https://LyvbzqzTVCwTGGEiCB6H@pypi.fury.io/mmcfer/'
 set -e
 
 DIRS="$@"
