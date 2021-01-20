@@ -89,7 +89,6 @@ def load_pipeline_keras() -> Pipeline:
     """Load a Keras Pipeline from disk."""
 
     dataset = joblib.load(config.PIPELINE_PATH)
-    print("Load model")
     build_model = lambda: load_model(config.MODEL_PATH)
 
     classifier = KerasClassifier(build_fn=build_model,

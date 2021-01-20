@@ -62,6 +62,7 @@ def test_classifier_endpoint_returns_prediction(flask_test_client):
     test_dir = os.path.join(data_dir, 'test_data')
     black_grass_dir = os.path.join(test_dir, 'Black-grass')
     black_grass_image = os.path.join(black_grass_dir, '1.png')
+    print(black_grass_image)
     with open(black_grass_image, "rb") as image_file:
         file_bytes = image_file.read()
         data = dict(
