@@ -161,14 +161,14 @@ jobs:
       - run:
           name: Deploy to Heroku
           command: |
-            git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
+            git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git my-branch13-9
 
   section_11_build_and_push_to_heroku_docker:
     <<: *defaults
     steps:
       - checkout
       - setup_remote_docker:
-          docker_layer_caching: true
+          docker_layer_caching: false
       - run: docker login --username=$HEROKU_EMAIL --password=$HEROKU_API_KEY registry.heroku.com
       - run:
           name: Setup Heroku CLI
@@ -246,17 +246,18 @@ workflows:
             - test_ml_api_py36
             - test_ml_api_py37
             - section_9_differential_tests
-          filters:
-            branches:
-              only:
-                - master
-      # - section_10_deploy_to_heroku:
-      #     requires:
-      #       - train_and_upload_regression_model
+          # filters:
+          #   branches:
+          #     only:
+          #       - master
+      - section_10_deploy_to_heroku:
+          requires:
+            - train_and_upload_regression_model
       #     filters:
       #       branches:
       #         only:
       #           - master
+<<<<<<< HEAD
 #      - section_11_build_and_push_to_heroku_docker:
 #          requires:
 #            - train_and_upload_regression_model
@@ -264,6 +265,15 @@ workflows:
 #            branches:
 #              only:
 #                - master
+=======
+      # - section_11_build_and_push_to_heroku_docker:
+      #     requires:
+      #       - train_and_upload_regression_model
+          # filters:
+          #   branches:
+          #     only:
+          #       - master
+>>>>>>> my-branch13-9
       # - section_12_publish_docker_image_to_aws:
       #     requires:
       #       - train_and_upload_regression_model

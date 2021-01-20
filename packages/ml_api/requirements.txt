@@ -1,14 +1,23 @@
 --extra-index-url=${PIP_EXTRA_INDEX_URL}
 
 # api
+<<<<<<< HEAD
 flask>=1.1.1,<1.2.0
+=======
+flask==1.1.2
+>>>>>>> my-branch13-9
 
 # schema validation
 marshmallow==2.17.0
 
 # Install from gemfury
+<<<<<<< HEAD
 regression-model==2.0.20
 neural_network_model==0.1.1
+=======
+regression-model==0.1.0
+neural_network_model==0.1.0
+>>>>>>> my-branch13-9
 
 # Deployment
 gunicorn==19.9.0
