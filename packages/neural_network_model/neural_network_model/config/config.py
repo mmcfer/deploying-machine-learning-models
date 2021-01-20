@@ -8,8 +8,8 @@ PWD = os.path.dirname(os.path.abspath(__file__))
 PACKAGE_ROOT = os.path.abspath(os.path.join(PWD, '..'))
 DATASET_DIR = os.path.join(PACKAGE_ROOT, 'datasets')
 TRAINED_MODEL_DIR = os.path.join(PACKAGE_ROOT, 'trained_models')
-# DATA_FOLDER = os.path.join(DATASET_DIR, 'v2-plant-seedlings-dataset')
-DATA_FOLDER = os.path.join("D:\\Datasets\\Kaggle", 'v2-plant-seedings-dataset')
+DATA_FOLDER = os.path.join(DATASET_DIR, 'v2-plant-seedlings-dataset')
+# DATA_FOLDER = os.path.join("D:\\Datasets\\Kaggle", 'v2-plant-seedings-dataset')
 
 
 
