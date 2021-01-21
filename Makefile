@@ -1,4 +1,4 @@
-NAME=udemy-deploy-mmcfer
+NAME=deploy-mmcfer
 COMMIT_ID=$(shell git rev-parse HEAD)
 
 
