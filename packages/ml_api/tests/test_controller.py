@@ -59,9 +59,12 @@ def test_classifier_endpoint_returns_prediction(flask_test_client):
     # data versions to get confused by not spreading it
     # across packages.
     data_dir = os.path.abspath(os.path.join(ccn_config.DATA_FOLDER, os.pardir))
+    print('=====================1')
+    print(data_dir)
     test_dir = os.path.join(data_dir, 'test_data')
     black_grass_dir = os.path.join(test_dir, 'Black-grass')
     black_grass_image = os.path.join(black_grass_dir, '1.png')
+    print('=====================2')
     print(black_grass_image)
     with open(black_grass_image, "rb") as image_file:
         file_bytes = image_file.read()
